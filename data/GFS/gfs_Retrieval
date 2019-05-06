@@ -1,0 +1,9 @@
+#!/bin/bash
+# gfs_Retrieval
+
+echo "Retrieving GFS Directories and Files"
+
+YEAR=`date +%Y`
+MONTH=`date +%m`
+
+wget -nH --cut-dirs=3 -m "http://nomads.ncdc.noaa.gov/data/gfs4/$YEAR$MONTH/"
