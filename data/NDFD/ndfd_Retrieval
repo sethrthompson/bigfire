@@ -1,0 +1,6 @@
+#!/bin/bash
+# ndfd_Retrieval
+
+echo "Retrieving NDFD Directories and Files"
+
+retrieval=$(wget -nH --cut-dirs=4 -m --input-file=download.txt)
